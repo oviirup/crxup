@@ -3,29 +3,20 @@
   "type": "module",
   "private": true,
   "workspaces": [
-    "apps/*",
-    "packages/*",
-    "tools/*"
+    "docs/*",
+    "packages/*"
   ],
-  "packageManager": "bun@1.1.34",
   "scripts": {
     "build": "turbo run build",
     "clean": "turbo run clean",
-    "dev": "turbo run dev",
-    "dev:web": "turbo run dev --filter web",
-    "format": "prettier . -w -u --cache",
+    "format": "prettier . -wu --cache",
+    "format:check": "prettier . -cu",
     "lint": "turbo run lint --parallel",
-    "lint:repo": "npx sherif",
-    "start": "turbo start",
-    "start:web": "turbo start --filter web"
+    "lint:repo": "npx sherif"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "~0.5.0",
-    "@changesets/cli": "~2.27.11",
-    "@crxup/prettier": "workspace:*",
-    "@types/bun": "~1.1.14",
-    "turbo": "~2.3.3",
-    "typescript": "~5.6.3",
-    "vitest": "~2.1.8"
+    "turbo": "~2.5.0",
+    "typescript": "~5.8.3",
+    "vitest": "~3.1.1"
   }
 }

@@ -1,15 +1,13 @@
-# static files
-*.test.*
-*.min.js
-.gitignore
+# PrettierIgnore https://prettier.io/docs/ignore.html
 
 # package lock files
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
-bun.lockb
+bun.lock
 
 # miscellaneous
+*.min.*
 *.log
 .*rc
 .DS_Store
