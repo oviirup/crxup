@@ -1,10 +1,12 @@
 {
   "recommendations": [
-    "esbenp.prettier-vscode",    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
-    "aaron-bond.better-comments", 
-      "vitest.explorer",
-    "timgthomas.explorer-gitignore", "redhat.vscode-yaml",
+    "aaron-bond.better-comments",
+    "vitest.explorer",
+    "timgthomas.explorer-gitignore",
+    "redhat.vscode-yaml",
     "github.vscode-github-actions"
   ]
 }
