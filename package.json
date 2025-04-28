@@ -12,17 +12,23 @@
     "format": "prettier . -wu --cache",
     "format:check": "prettier . -cu",
     "lint": "turbo run lint --parallel",
-    "lint:repo": "npx sherif"
+    "lint:repo": "npx sherif",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@types/node": "~22.14.1",
+    "@types/node": "~22.15.3",
+    "husky": "~9.1.7",
+    "lint-staged": "~15.5.1",
     "prettier": "~3.5.3",
     "prettier-plugin-imports": "~4.3.3",
     "prettier-plugin-jsdoc": "~1.3.2",
     "prettier-plugin-pkg": "~0.19.0",
     "prettier-plugin-tailwindcss": "~0.6.11",
-    "turbo": "~2.5.0",
+    "turbo": "~2.5.2",
     "typescript": "~5.8.3",
-    "vitest": "~3.1.1"
+    "vitest": "~3.1.2"
+  },
+  "lint-staged": {
+    "*": "prettier -wu --cache"
   }
 }
