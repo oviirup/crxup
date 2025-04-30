@@ -1,0 +1,50 @@
+{
+  "name": "crxup",
+  "version": "0.0.0",
+  "description": "Framework for building cross-browser compatible extensions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oviirup/crxup.git",
+    "directory": "packages/crxup"
+  },
+  "author": {
+    "name": "Avirup Ghosh",
+    "url": "https://github.com/oviirup"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "crxup": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup-node src/** --dts --format cjs",
+    "clean": "npx rimraf .turbo dist",
+    "dev": "pnpm run build --watch",
+    "test": "vitest --run"
+  },
+  "peerDependencies": {
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "dependencies": {
+    "commander": "~13.1.0",
+    "esbuild": "~0.25.3",
+    "sharp": "~0.34.1",
+    "tinyglobby": "~0.2.13"
+  },
+  "devDependencies": {
+    "@types/node": "~22.15.3",
+    "@types/react": "~19.1.2",
+    "@types/react-dom": "~19.1.2",
+    "chokidar": "~4.0.3",
+    "consola": "~3.4.2",
+    "dotenv": "~16.5.0",
+    "resolve-from": "~5.0.0",
+    "sass": "~1.87.0",
+    "tsup": "~8.4.0"
+  }
+}
