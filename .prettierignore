@@ -13,3 +13,4 @@ schema.json
 .*rc
 .DS_Store
 .pnp.*
+.husky
